@@ -1,0 +1,44 @@
+@import './variables';
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #222;
+  color: $text-color;
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+
+    li {
+      cursor: pointer;
+    }
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .lang-select {
+      padding: 0.3rem;
+    }
+
+    .login-btn {
+      background-color: $primary-color;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      color: #000;
+      font-weight: bold;
+    }
+  }
+}
